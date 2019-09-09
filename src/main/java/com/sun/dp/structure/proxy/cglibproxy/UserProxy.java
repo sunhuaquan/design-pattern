@@ -35,6 +35,7 @@ public class UserProxy  {
         enhancer.setCallback((MethodInterceptor) (obj, method, args, proxy) -> {
             System.out.println("before method run...");
             Object result = proxy.invokeSuper(obj, args);
+            //method.invoke(target,args);
             System.out.println("after method run...");
             return result;
         });
