@@ -27,5 +27,5 @@ public abstract class HouseBuilder {
 
     public  House getResult(){
         return house;
-    };
+    }
 }
